@@ -1,0 +1,89 @@
+Git 
+
+Git init (iam ready)
+
+Git status (in snapshot not yet saved)  (un-staged)  (checking people are there  to take photo with bride ) yes! Goto git add 
+
+Git add . (Snapshot)   (come to stage)
+
+Git stash (send to backstage)  (when I want I will bring back)(go backstage we will call u for group photo/individual photo)
+
+Git stash pop (asking them to come back) (ok come to stage )
+Git stash  clear (telling sorry you can be taken photograph bride is unwell)
+
+Git commit -m “” (save )
+
+Git log (all the changes so far)
+
+Git reset hashID ( Git log:  use remove the commit/history  previous to delete latest)
+
+Git hub 
+
+PUSHING MY CODE TO GIT HUB
+
+1. CREATE REPO IN GITHUB  
+2. TO ATTACH THIS REPO COPY SSH 
+3. Git remote add origin “link” (Remote Desktop)
+4. Git remote -v (ATTACHED LINK TO MY url)
+5. Git push origin master
+
+Branching ?
+
+Git branch branch name  <its always good> now head points to branch-name.> becoz I’m working on new branch 
+
+Merge ? Pull request 
+
+My branch can be merge
+Git merge branch name
+
+
+Working with existing projects 
+For every feature you want to work always make sure create branch 
+1. Fork (copy)
+2. Clone  
+3. Git remote add upstream “url”
+4. Git branch branch-name (imp)
+5. Modify, changes and snapshot it, commit 
+6. Git push origin branch-name
+7. Pull  request (=1 branch)
+8. Even if I modify the files  after pull request (it doesn’t allows to create multiple pull request instead sing logs maintanined)
+9. For new pull request new branch is always needed.
+
+To remove the commit from pull request
+1. Git reset hashID ( Git log:  use remove the commit/history  previous to delete latest)
+2. Git status (in snapshot not yet saved)  (un-staged)  (checking people are there  to take photo with bride ) yes! Goto git add 
+3. Git add . (Snapshot)   (come to git stage)
+4. Git push origin branch-name -
+5 . Git push upstream branch name
+
+
+
+To fetch al, the commits made in the origin master (say other project the people merged files)
+
+Type: 1
+Manually
+
+1. Git log
+2. Git fetch —all —prune (fetched all changes )
+3. (Reset main branch of my origin  to the main branch of upstream)
+4. Git reset - - hard upstream/main
+5. Git log
+6. Git push origin main.
+
+Type: 2
+	Git pull upstream main
+
+
+
+
+How to merge multiple commits into single commit
+Use rebase 
+Git log
+1. Git rebase - i  (copy the first commit log)
+2. We get pick 
+3. Change s (squash will be merged with pick)
+4. Git log
+
+MERGE CONFLICT
+manully. Resolve 
+
